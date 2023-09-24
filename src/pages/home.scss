@@ -1,0 +1,43 @@
+.home-wrapper {
+    background: linear-gradient(90deg, rgba(253,29,29,1) 50%, rgba(255,106,0,1) 100%);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    
+    p {
+        padding: 0;
+    }
+
+    button {
+        background-color: white;
+        font-size: 14px;
+        color: black;
+        font-weight: bold;
+        border: none;
+        padding: 12px 32px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+
+
+        &:hover {
+            background-color: black;
+            color: white;
+        }
+    }
+
+
+    @media (max-width: 414px) {
+        height: 300px;
+        font-size: 12px;
+    }
+
+    @media (max-width: 768px) {
+        height: 400px;
+        font-size: 16px;
+    }
+}

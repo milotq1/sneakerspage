@@ -1,0 +1,95 @@
+.shop-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+
+  .shop-wrapper {
+      max-width: 800px;
+      width: 100%;
+
+      h1 {
+          font-size: 28px;
+          margin-bottom: 20px;
+          text-align: center;
+      }
+
+      .box-container {
+          margin-bottom: 20px;
+          background-color: #fff;
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          padding: 20px;
+
+          
+
+          ul {
+              list-style: none;
+              padding: 0;
+
+              @media (max-width: 500px) {
+                li {
+                  display: flex;
+                  flex-direction: column;
+
+                  .list-container {
+                    flex-direction: column;
+                      img {
+                          max-width: 100%;
+                          margin-right: 0;
+                      }
+                  }
+              }
+              }
+
+              li {
+
+                
+                  display: flex;
+                  justify-content: space-between;
+                  flex-direction: row;
+                  align-items: center;
+                  border-bottom: 1px solid #ccc;
+                  padding: 10px 0;
+                  margin-bottom: 10px;
+
+                  .list-container {
+                      display: flex;
+
+                      img {
+                          max-width: 120px;
+                          margin-right: 20px;
+                      }
+
+                      h2 {
+                          font-size: 20px;
+                          margin: 0;
+                      }
+
+                      p {
+                          margin: 0;
+                      }
+                  }
+
+                  button {
+                      background-color: orangered;
+                      color: #fff;
+                      border: none;
+                      padding: 10px 20px;
+                      border-radius: 5px;
+                      cursor: pointer;
+                      transition: background-color 0.3s ease, color 0.3s ease;
+
+                      &:hover {
+                          background-color: black;
+                          color: white;
+                      }
+                  }
+              }
+          }
+      }
+  }
+
+  
+}
